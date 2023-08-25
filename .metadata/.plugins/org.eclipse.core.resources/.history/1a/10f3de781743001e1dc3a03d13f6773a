@@ -1,0 +1,8 @@
+package com.aurionpro.test;
+
+public class EmployeeInfoTest {
+	
+	public static void main(String[] args) {
+		
+	}
+}

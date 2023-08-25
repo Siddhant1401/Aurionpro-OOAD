@@ -1,0 +1,29 @@
+package com.aurionpro.model;
+
+public class EmployeeUtil {
+
+	
+	public double calculateTotalSalary(EmployeeInfo employee) {
+		double monthlySalary =  employee.getBasicSalary() + employee.getHra() +  employee.getDa() + employee.getTa();
+		return monthlySalary;
+
+	}
+	
+	public double calculateTax(EmployeeInfo employeeInfo) {
+		if ((employeeInfo.calculateTotalSalary()*12) > 500000 && (this.calculateTotalSalary()*12)<800000 ) {
+			return this.calculateTotalSalary()*12*10/100;
+		}
+		else if((this.calculateTotalSalary()*12) > 800000 && (this.calculateTotalSalary()*12)<1000000) {
+			return this.calculateTotalSalary()*12*20/100;
+		}
+		else {
+			return this.calculateTotalSalary()*12*30/100;
+		}
+	}
+	
+	public void printSalarySlip() {
+		System.out.println("Total Salary : "+this.calculateTotalSalary());
+		System.out.println("Tax  : "+this.calculateTax());
+		System.out.println("Annual Salary : "+this.calculateTotalSalary()*12);
+	}
+}

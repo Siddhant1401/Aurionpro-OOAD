@@ -1,0 +1,11 @@
+package com.aurionpro.model;
+
+public class PrinterUtil {
+	
+	public void printSalarySlip(EmployeeInfo employeeInfo) {
+		double tax = new TaxUtil().calculateTax(employeeInfo);
+		
+		System.out.println("Id : "+employeeInfo.getId());
+	}
+
+}

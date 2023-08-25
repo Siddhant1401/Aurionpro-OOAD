@@ -1,0 +1,12 @@
+package com.aurionpro.model;
+
+public class EmployeeInfo {
+
+	private int id;
+	private String name;
+	private double basicSalary;
+	private double hra;
+	private double da;
+	private double ta;
+
+}
