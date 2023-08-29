@@ -25,10 +25,10 @@ public class Inventory {
 		return null;
 	}
 
-	public List<Guitar> searchGuitar(GuitarSpec spec) {
+	public List<Guitar> searchGuitar(GuitarSpec specs) {
 		List<Guitar> searchResults = new ArrayList<Guitar>();
-		for (Guitar guitar : searchResults) {
-			if (spec.matches(guitar.getSpecs())) {
+		for (Guitar guitar: guitars) {
+			if (specs.matches(guitar.getSpecs())) {
 				searchResults.add(guitar);
 			}
 		}

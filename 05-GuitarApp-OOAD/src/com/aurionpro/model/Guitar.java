@@ -39,7 +39,7 @@ public class Guitar {
 
 	@Override
 	public String toString() {
-		return "Guitar [serialNumber=" + serialNumber + ", price=" + price + ", specs=" + specs + "]";
+		return "Guitar [serialNumber=" + serialNumber + ", price=" + price + ", specs=" + specs + "]\n";
 	}
 
 }

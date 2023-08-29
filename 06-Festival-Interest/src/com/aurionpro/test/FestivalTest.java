@@ -14,7 +14,7 @@ public class FestivalTest {
 		FixedDeposite fd2 = new FixedDeposite("Sita", 10000, 2, new HoliInterest());
 		
 		printInfo(fd1);
-		printInfo(fd2);
+//		printInfo(fd2);
 		
 
 		
